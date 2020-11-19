@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github</title>
+    
+<link rel="stylesheet" href="sajat.css">
+</head>
+<body>  
+
+    
+<div class="j">
+  <h1>Téglalap területe, kerülete </h1>
+</div >
+    <input type="text" id="szam1" class="k">
+    <input type="text" id="szam2" class="k">
+    <br>
+    <button onclick="kt()" class="k">Kerület és terület</button> 
+    
+    <br>
+    <span class="k">Kerület:
+    <span id="kimenet"></span>
+    
+    <span class="k">Terület:
+    <span id="kimenet2"></span>
+    <script>
+        function kt()
+        {
+            var szam1 = document.getElementById("szam1").value;
+            var szam2 = document.getElementById("szam2").value;
+            var ker =2*(parseInt(szam1) +parseInt(szam2));
+            document.getElementById("kimenet").innerHTML = ker;
+            
+            var ter =parseInt(szam1) * parseInt(szam2);
+            document.getElementById("kimenet2").innerHTML = ter;
+            
+        }
+    
+
+    </script>
+
+</body>
+</html>
